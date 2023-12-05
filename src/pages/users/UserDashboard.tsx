@@ -17,12 +17,7 @@ export default function UserDashboard() {
         <p className='mt-2 text-lg text-gray-700 dark:text-gray-400'>
           This should be a dashboard page for general user.
         </p>
-        <div className='mt-8 grid flex-col items-center gap-2 text-center sm:flex-row sm:gap-3'>
-          <Button as={Link} to='/' variant='primary'>
-            Back to homepage
-          </Button>
-          <Button onClick={logout}>Sign Out</Button>
-        </div>
+        <div className='mt-8 grid flex-col items-center gap-2 text-center sm:flex-row sm:gap-3'></div>
       </Card>
     </Container>
   )

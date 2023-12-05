@@ -60,11 +60,7 @@ export default function ResetPassword() {
         {success && (
           <div className='p-4 sm:px-7 sm:pb-8'>
             <Alert variant='success'>{success}</Alert>
-            <div className='mt-6 grid w-full text-center'>
-              <Button as={Link} variant='primary' to='/login'>
-                Continue to your account &rarr;
-              </Button>
-            </div>
+            <div className='mt-6 grid w-full text-center'></div>
           </div>
         )}
 
@@ -83,16 +79,7 @@ export default function ResetPassword() {
                 error={errors.password}
               />
             </div>
-            <div className='mt-6 grid w-full'>
-              <Button
-                type='submit'
-                variant='primary'
-                disabled={isSubmitting}
-                loading={isSubmitting}
-              >
-                Reset Password
-              </Button>
-            </div>
+            <div className='mt-6 grid w-full'></div>
           </form>
 
           <div className='mt-8 text-center'>

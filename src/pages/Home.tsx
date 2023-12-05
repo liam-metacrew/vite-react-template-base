@@ -22,31 +22,7 @@ export default function Home() {
             Vite + React + Typescript + Tailwind CSS + React Hook Form + Vitest
           </p>
         </div>
-        <div className='mt-4 flex flex-col items-center justify-center gap-2 sm:flex-row sm:gap-3'>
-          <Button
-            as={Link}
-            to='/dashboard'
-            variant='primary'
-            className='inline-flex items-center justify-center'
-          >
-            User Dashboard
-          </Button>
-          <Button
-            as={Link}
-            to='/admin'
-            variant='danger'
-            className='inline-flex items-center justify-center'
-          >
-            Admin Dashboard
-          </Button>
-          <Button
-            as={'a'}
-            href='https://github.com/riipandi/vite-react-template'
-            className='inline-flex items-center justify-center'
-          >
-            Get Source Code
-          </Button>
-        </div>
+        <div className='mt-4 flex flex-col items-center justify-center gap-2 sm:flex-row sm:gap-3'></div>
         <div>
           <Alert variant={loggedIn ? 'info' : 'warning'} className='w-full text-center'>
             {loggedIn ? `Welcome back ${user?.email} 👋` : 'You are not logged in!'}

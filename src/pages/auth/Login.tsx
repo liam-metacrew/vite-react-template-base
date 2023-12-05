@@ -3,7 +3,6 @@ import { useForm } from 'react-hook-form'
 import { Link } from 'react-router-dom'
 
 import { Alert } from '@/components/Alerts/Alert'
-import { Button } from '@/components/Buttons'
 import { Card } from '@/components/Containers'
 import { HorizontalDivider } from '@/components/Dividers'
 import { PasswordInput, TextInput } from '@/components/Inputs'
@@ -70,16 +69,7 @@ export default function Login() {
                 withResetLink
               />
             </div>
-            <div className='mt-6 grid w-full'>
-              <Button
-                type='submit'
-                variant='primary'
-                disabled={isSubmitting}
-                loading={isSubmitting}
-              >
-                Sign in
-              </Button>
-            </div>
+            <div className='mt-6 grid w-full'></div>
           </form>
 
           <div className='mt-8 text-center'>

@@ -18,7 +18,7 @@ type PolymorphicComponentProp<T extends React.ElementType, Props = {}> = React.P
 // This is a new type utitlity with ref!
 type PolymorphicComponentPropWithRef<
   T extends React.ElementType,
-  Props = {}
+  Props = {},
 > = PolymorphicComponentProp<T, Props> & { ref?: PolymorphicRef<T> }
 
 // This is the type for the "ref" only
@@ -36,6 +36,7 @@ type ButtonProps<T extends React.ElementType> = PolymorphicComponentPropWithRef<
     disabled?: boolean
     loading?: boolean
     className?: string
+    children?: React.ReactNode
   }
 >
 
@@ -46,7 +47,7 @@ type ButtonComponent = <T extends React.ElementType = 'button'>(
   props: ButtonProps<T>
 ) => React.ReactElement | null
 
-export const Button: ButtonComponent = React.forwardRef(
+export const Button: React.FC<ButtonComponent> = React.forwardRef(
   <T extends React.ElementType = 'button'>(
     {
       as,

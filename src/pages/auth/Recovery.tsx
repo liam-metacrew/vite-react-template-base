@@ -49,16 +49,7 @@ export default function Recovery() {
                 />
               </div>
             </div>
-            <div className='mt-6 grid w-full'>
-              <Button
-                type='submit'
-                variant='primary'
-                disabled={isSubmitting}
-                loading={isSubmitting}
-              >
-                Recover Password
-              </Button>
-            </div>
+            <div className='mt-6 grid w-full'></div>
           </form>
 
           <div className='mt-8 text-center'>

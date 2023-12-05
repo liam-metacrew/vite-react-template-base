@@ -28,7 +28,7 @@
       "~/*": ["public/*"]
     }
   },
-  "include": ["src"],
+  "include": ["src", "i18n"],
   "exclude": ["node_modules"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
