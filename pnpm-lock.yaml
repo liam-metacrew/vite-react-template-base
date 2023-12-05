@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@formatjs/intl-relativetimeformat':
+    specifier: ^11.2.10
+    version: 11.2.10
   '@heroicons/react':
     specifier: ^2.0.18
     version: 2.0.18(react@18.2.0)
@@ -643,6 +646,14 @@ packages:
   /@formatjs/intl-localematcher@0.5.2:
     resolution: {integrity: sha512-txaaE2fiBMagLrR4jYhxzFO6wEdEG4TPMqrzBAcbr4HFUYzH/YC+lg6OIzKCHm8WgDdyQevxbAAV1OgcXctuGw==}
     dependencies:
+      tslib: 2.6.2
+    dev: false
+
+  /@formatjs/intl-relativetimeformat@11.2.10:
+    resolution: {integrity: sha512-v6RFxcab7lJm11VnUACs/p0OSo3EHrrPlHo0HwA5jOcTgTjlxdfun+riqMK+h2KAY+7AjgsqNN76wc0cB83xOw==}
+    dependencies:
+      '@formatjs/ecma402-abstract': 1.18.0
+      '@formatjs/intl-localematcher': 0.5.2
       tslib: 2.6.2
     dev: false
 

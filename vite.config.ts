@@ -11,6 +11,7 @@ export default defineConfig({
   envPrefix: ['API_', 'VITE_'],
   define: {
     'import.meta.env.APP_VERSION': `"${process.env.npm_package_version}"`,
+    'process.env': process.env,
   },
   test: {
     globals: true,
@@ -38,7 +39,6 @@ export default defineConfig({
   base: '/',
   server: {
     port: 3000,
-    base: '/',
     proxy: {},
   },
 })
