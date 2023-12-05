@@ -12,7 +12,8 @@
     "postinstall": "husky install",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx}\"",
     "test:ui": "vitest --ui",
-    "test": "vitest"
+    "test": "vitest",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@heroicons/react": "^2.0.18",
@@ -49,7 +50,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-simple-import-sort": "^10.0.0",
     "eslint-plugin-tailwindcss": "^3.13.0",
-    "husky": "^8.0.3",
+    "husky": "^8.0.0",
     "jsdom": "^22.1.0",
     "lint-staged": "^15.2.0",
     "postcss": "^8.4.31",
