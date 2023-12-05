@@ -38,7 +38,7 @@
         "--disable-crash-reporter",
         "--disable-extensions",
         "--disable-hang-monitor",
-        "--suppress-message-center-popups",
+        "--suppress-message-center-popups"
       ],
       "internalConsoleOptions": "openOnSessionStart",
       "presentation": {
@@ -47,7 +47,7 @@
         "order": 2
       }
     },
-        {
+    {
       "name": "vite:test",
       "type": "node",
       "request": "launch",
@@ -61,7 +61,7 @@
         "group": "debug",
         "order": 3
       }
-    },
+    }
   ],
   "compounds": [
     {

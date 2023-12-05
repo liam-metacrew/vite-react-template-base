@@ -17,7 +17,7 @@ type PolymorphicComponentProp<C extends React.ElementType, Props = {}> = React.P
 // This is a new type utitlity with ref!
 type PolymorphicComponentPropWithRef<
   C extends React.ElementType,
-  Props = {}
+  Props = {},
 > = PolymorphicComponentProp<C, Props> & { ref?: PolymorphicRef<C> }
 
 // This is the type for the "ref" only

@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom'
 
 import { Alert } from '@/components/Alerts'
-import { Button } from '@/components/Buttons'
 import { useAuthentication } from '@/hooks/AuthProvider'
 
 import ViteLogo from '~/images/vite.svg'
@@ -19,7 +18,7 @@ export default function Home() {
         <div className='text-center text-lg text-gray-600 dark:text-gray-400 sm:mt-8'>
           <p className='leading-8'>This is an example starter template React with Vite.</p>
           <p className='leading-8'>
-            Vite + React + Typescript + Tailwind CSS + React Hook Form + Vitest + Husky
+            Vite + React + Typescript + Tailwind CSS + React Hook Form + Vitest + Husky + Commitlint
           </p>
         </div>
         <div className='mt-4 flex flex-col items-center justify-center gap-2 sm:flex-row sm:gap-3'></div>

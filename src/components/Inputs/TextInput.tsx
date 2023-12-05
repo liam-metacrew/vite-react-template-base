@@ -6,13 +6,13 @@ type PropsToOmit<P> = keyof P
 // This is the first reusable type utility we built
 type PolymorphicComponentProp<
   T extends React.ElementType,
-  Props = {}
+  Props = {},
 > = React.PropsWithChildren<Props> & Omit<React.ComponentPropsWithoutRef<T>, PropsToOmit<T>>
 
 // This is a new type utitlity with ref!
 type PolymorphicComponentPropWithRef<
   T extends React.ElementType,
-  Props = {}
+  Props = {},
 > = PolymorphicComponentProp<T, Props> & { ref?: PolymorphicRef<T> }
 
 // This is the type for the "ref" only

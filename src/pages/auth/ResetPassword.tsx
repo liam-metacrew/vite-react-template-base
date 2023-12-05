@@ -5,7 +5,6 @@ import { useSearchParams } from 'react-router-dom'
 import clsx from 'clsx'
 
 import { Alert } from '@/components/Alerts/Alert'
-import { Button } from '@/components/Buttons'
 import { Card } from '@/components/Containers'
 import { PasswordInput } from '@/components/Inputs'
 import { auth } from '@/hooks/AuthProvider'
@@ -24,7 +23,7 @@ export default function ResetPassword() {
   const {
     register,
     handleSubmit,
-    formState: { errors, isSubmitting },
+    formState: { errors },
   } = useForm<ResetPasswordTypes>()
 
   const handleResetPassword = (data: ResetPasswordTypes) => {
